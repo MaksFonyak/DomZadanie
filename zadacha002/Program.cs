@@ -11,7 +11,7 @@ int b = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Введите третье (целое) число ");
 int c = Convert.ToInt32(Console.ReadLine());
-
+м
 int max = a;
 
 if (max < b) max = b;
