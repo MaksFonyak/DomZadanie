@@ -5,8 +5,7 @@
 
 Console.WriteLine("Введите трехзначное число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-int[] arr = new int[a.Lenght];
-if ((arr[0] == arr[4]) && (arr[1] == arr[3]))
-{Console.WriteLine($"Число {a} - полиндром: ");} 
-else
-Console.WriteLine($"Число {a} -не полиндром: ");
+
+a = ((a % 100 ) / 10);
+
+Console.WriteLine($"Вторая цифра: {a}");
