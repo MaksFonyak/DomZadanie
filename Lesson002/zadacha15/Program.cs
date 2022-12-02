@@ -6,6 +6,6 @@
 
 Console.WriteLine("Введите число от 1 до 7: ");
 int a = Convert.ToInt32(Console.ReadLine());
-if ((a < 0) || (a > 7)) Console.WriteLine("Не правильное число ");
+if ((a < 0) || (a > 7)) Console.WriteLine("Не правильное число "); 
 if ((a == 6) || (a == 7)) Console.WriteLine("Выходной ");
-else Console.WriteLine("Будний день ");
+if ((a != 6) && (a != 7)) Console.WriteLine("Будний день ");
