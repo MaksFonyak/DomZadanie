@@ -3,30 +3,30 @@
 
 // [345, 897, 568, 234] -> 2
 
-Console.Write("Укажите количество элементов массива: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int count = 0;
-int[] arr = new int[num];
-FillArray(arr);
-Console.Write($"В массиве {count} четных чисел");
-
-int[] FillArray(int[] a)
+void PrintArray(int[] arr)
 {
-    for (int i = 0; i < a.Length; i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        a[i] = new Random().Next(100, 1000);
-        if (a[i] % 2 == 0) count++;
+        {
+            Console.Write($"{arr[i]} ");
+        }
     }
-    return a;
 }
 
-int[] PrintArray(int[] a)
+void FillArray(int[] arr)
 {
-    for (int i = 0; i < a.Length; i++)
-
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        Console.Write($"{a[i]} ");
+        {
+            arr[i] = new Random().Next(100, 1000);
+        }
     }
-    Console.WriteLine();
 }
-PrintArray(arr);
+
+int[] matrix = new int[6];
+
+
+FillArray(matrix);
+Console.WriteLine();
+PrintArray(matrix);
+Console.WriteLine();
